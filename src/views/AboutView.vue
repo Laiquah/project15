@@ -1,24 +1,43 @@
 <template>
   <div>
     <h1>Introducing Our Team</h1>
-    <article class="card">
-      <img
-        class="card__background"
-        src="https://i.imgur.com/QYWAcXk.jpeg"
-        alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
-        width="1920"
-        height="2193"
-      />
-      <div class="card__content | flow">
-        <div class="card__content--container | flow">
-          <h2 class="card__title">Colombia</h2>
-          <p class="card__description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in
-            labore laudantium deserunt fugiat numquam.
-          </p>
+    <section>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="card">
+            <div class="cover item-a">
+              <h1>LAIQUAH<br>COTIE</h1>
+              <span class="price">CEO</span>
+              <div class="card-back">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo consectetur voluptatum nesciunt earum quidem expedita, voluptates ab id praesentium ipsa iusto ipsam velit veniam minima beatae dignissimos ad incidunt! Rerum.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="card">
+            <div class="cover item-b">
+              <h1>GANIEFAH<br>MAJIET</h1>
+              <span class="price">CEO</span>
+              <div class="card-back">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo consectetur voluptatum nesciunt earum quidem expedita, voluptates ab id praesentium ipsa iusto ipsam velit veniam minima beatae dignissimos ad incidunt! Rerum.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="card">
+            <div class="cover item-c">
+              <h1>CODI<br>KADER</h1>
+              <span class="price">MANAGER</span>
+              <div class="card-back">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo consectetur voluptatum nesciunt earum quidem expedita, voluptates ab id praesentium ipsa iusto ipsam velit veniam minima beatae dignissimos ad incidunt! Rerum.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </article>
+    </section>
   </div>
 </template>
 
@@ -67,7 +86,7 @@ body {
 h2 {
   font-size: 2.25rem;
   font-family: var(--font-title);
-  color: var(--white);
+  color: black;
   line-height: 1.1;
 }
 
@@ -75,7 +94,7 @@ p {
   font-family: var(--font-text);
   font-size: 1rem;
   line-height: 1.5;
-  color: var(--white);
+  color: black;
 }
 
 .flow > * + * {
@@ -160,10 +179,6 @@ p {
   }
 
   .card__content--container > :not(.card__title),
-  .card__button {
-    opacity: 0;
-    transition: transform 500ms ease-out, opacity 500ms ease-out;
-  }
 
   .card:hover,
   .card:focus-within {
@@ -189,7 +204,7 @@ p {
   .card:hover .card__content--container > :not(.card__title),
   .card:hover .card__button,
   .card:focus-within .card__content--container > :not(.card__title),
-  .card:focus-within .card__button {
+  .card:focus-within {
     opacity: 1;
     transition: opacity 500ms ease-in;
     transition-delay: 1000ms;
